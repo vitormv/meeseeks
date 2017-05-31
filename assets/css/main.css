@@ -1,0 +1,90 @@
+/* Downloaded from http://www.codeseek.co/ */
+body {
+    background: #7ddefe;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+.box {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 100px;
+    height: 118px;
+    transition: all .2s ease-in-out;
+    perspective: 500px;
+    content: '';
+}
+.box:hover {
+    transform: scale(1.05);
+}
+.box:after {
+    /* Shadow for the box */
+    position: absolute;
+    width: 100px;
+    height: 199px;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    transform: rotateX(90deg) translateZ(-150px);
+    z-index: -1;
+    content: '';
+    top: -120px;
+    left: 8px;
+}
+
+#meeseeks_face {
+    display: none;
+    margin: 1em 0;
+    background: #7ddefe;
+    width: 60%;
+    align-self: center;
+    /*position: absolute;*/
+    z-index: 0;
+}
+form {
+    opacity: 0;
+    text-align: center;
+    width: 60%;
+    transition: all .2s ease-in;
+}
+form.visible {
+    opacity: 100;
+}
+form input.request {
+    /*bright: #6bffac*/
+    color: #6bffac;
+    display: inline-block;
+    background-color: #008c8c;
+    border: 4px solid #004030;
+    outline: none;
+    font-size: 24px;
+    font-style: italic;
+    padding: 10px 20px;
+    width: 60%;
+    margin: 10px 0;
+    text-align: center;
+}
+form input.submit {
+    color: #6bffac;
+    display: inline-block;
+    background-color: #008c8c;
+    border: 4px solid #004030;
+    outline: none;
+    font-size: 24px;
+    font-style: italic;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+form .help {
+    display: block;
+    color: #004030;
+    font-size: 10px;
+    padding: 5px 0;
+    cursor: help;
+}
+form .help:hover {
+    text-decoration: underline;
+}

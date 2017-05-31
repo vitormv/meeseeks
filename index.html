@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Meeseeks - Ooooh yeaaaaah, caaaaan dooo!</title>
+
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <a class="box">
+        <img src="assets/img/box.png" class="box" />
+    </a>
+
+    <audio class="im_mr_meeseeks" preload="auto">
+        <source src="assets/audio/im_mr_meeseeks.m4a">
+    </audio>
+    <audio class="oooh_yeaaah_caaaan_dooo" preload="auto">
+        <source src="assets/audio/oooh_yeaaah_caaaan_dooo.m4a">
+    </audio>
+    <audio class="you_make_a_request" preload="auto">
+        <source src="assets/audio/you_make_a_request.m4a">
+    </audio>
+
+    <div id="meeseeks_face">
+        <svg class="meeseeks_face" viewBox="0 0 500 200">
+            <!-- eyes outer -->
+            <circle id="eye-1" cx="220" cy="50" r="18" fill="black"></circle>
+            <circle id="eye-e" cx="280" cy="50" r="20" fill="black"></circle>
+
+            <!-- eyes inner -->
+            <circle cx="220" cy="40" r="4" fill="white"></circle>
+            <circle cx="280" cy="40" r="5" fill="white"></circle>
+
+            <!-- main smile -->
+            <path d="M150 130 C 170 170, 330 170, 350 110" stroke="black" stroke-width="2" fill="transparent"/>
+
+            <!-- cheeks -->
+            <path d="M150 100 C 100 130, 140 180, 150 180" stroke="black" stroke-width="2" fill="transparent" />
+            <path d="M350 90 C 400 100, 360 150, 340 160" stroke="black" stroke-width="2" fill="transparent" />
+
+            <!-- chin -->
+            <path d="M220 180 C 220 190, 280 190, 280 175" stroke="black" stroke-width="2" fill="transparent"/>
+
+            <!-- eyebrows -->
+            <path d="M200 20 C 200 10, 210 5, 225 8" stroke="black" stroke-width="2" fill="transparent"/>
+            <path id="eyebrow-2" d="M270 5 C 280 0, 300 8, 300 20" stroke="black" stroke-width="2" fill="transparent"/>
+
+        </svg>
+    </div>
+
+    <form>
+        <input title="" type="text" class="request" />
+        <input type="submit" class="submit" value="Request" />
+        <a class="help">What is this?</a>
+    </form>
+
+
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
